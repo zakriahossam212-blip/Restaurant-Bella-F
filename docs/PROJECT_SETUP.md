@@ -551,7 +551,7 @@ npx eslint --cache --cache-location .eslintcache --fix src/
 1. **Start Development Server**: `npm start`
 2. **Read Architecture Guide**: See `docs/architecture.md`
 3. **Review Contributing Guide**: See `docs/CONTRIBUTING.md`
-4. **Explore Project Structure**: See `docs/STRUCTURE.md`
+4. **Explore Project Structure**: See [the architecture guide](architecture.md)
 5. **Check Features**: See `docs/FEATURES.md`
 
 ## Additional Resources

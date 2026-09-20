@@ -41,6 +41,7 @@ jobs:
         cname: bella-restaurant.com # Replace with your domain
     
     - name: Deploy to Netlify (Production)
+      if: secrets.NETLIFY_AUTH_TOKEN != '' && secrets.NETLIFY_PRODUCTION_SITE_ID != ''
       uses: nwtgck/actions-netlify@v3.0
       with:
         publish-dir: './dist/resturent'
@@ -104,7 +105,7 @@ jobs:
         prerelease: false
     
     - name: Notify Slack - Deployment Status
-      if: github.event_name == 'push'
+      if: github.event_name == 'push' && secrets.SLACK_WEBHOOK != ''
       uses: 8398a7/action-slack@v3
       with:
         status: ${{ job.status }}

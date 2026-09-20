@@ -6,7 +6,7 @@
 
 :root {
   --bg-dark: #000000;
-  --accent-red: #E53935;
+  --accent-red: #e53935;
   --text-gray: #9ca3af;
 }
 
@@ -22,7 +22,11 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, .font-serif {
+h1,
+h2,
+h3,
+h4,
+.font-serif {
   font-family: 'Playfair Display', serif;
 }
 
@@ -31,15 +35,23 @@ h1, h2, h3, h4, .font-serif {
 }
 
 .btn-neon:hover {
-  box-shadow: 0 0 20px var(--accent-red), 0 0 40px var(--accent-red);
+  box-shadow:
+    0 0 20px var(--accent-red),
+    0 0 40px var(--accent-red);
   filter: brightness(1.2);
   transform: translateY(-2px);
 }
 
 /* Custom Utilities */
-.text-accent { color: var(--accent-red); }
-.bg-accent { background-color: var(--accent-red); }
-.border-accent { border-color: var(--accent-red); }
+.text-accent {
+  color: var(--accent-red);
+}
+.bg-accent {
+  background-color: var(--accent-red);
+}
+.border-accent {
+  border-color: var(--accent-red);
+}
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

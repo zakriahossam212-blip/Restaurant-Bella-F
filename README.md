@@ -1,265 +1,80 @@
-# Bella Restaurant - Modern Dining Experience
+# Bella
 
-A premium restaurant landing page built with **Angular 19**, featuring modern architecture, high-performance state management, and comprehensive documentation.
+> A refined digital front door for a modern restaurant.
 
-## 🚀 Quick Start
+Bella is an Angular 19 restaurant experience focused on the details that make a dining brand feel premium: editorial typography, warm visual rhythm, responsive interactions, and a clear path from discovery to reservation.
+
+[Live site](https://bella-flax.vercel.app/) · [Get started](docs/PROJECT_SETUP.md) · [Documentation](docs/INDEX.md)
+
+![Bella home page](docs/assets/screenshots/screencapture-bella-73-vercel-app-2026-03-22-11_30_41.png)
+
+## Experience focus
+
+- **Modern editorial UI** — a layered, responsive visual system for the restaurant story, chef profiles, menu, and booking moments.
+- **Conversion-first journeys** — direct navigation from inspiration to menu exploration and table reservation.
+- **Maintainable Angular architecture** — standalone components organized into `core`, `features`, `layout`, and `shared` boundaries.
+- **Predictable data flow** — NgRx state and a mock API keep restaurant content easy to evolve into a production backend.
+- **Quality by default** — TypeScript, ESLint, Prettier, unit tests, Lighthouse, and GitHub Actions support a dependable delivery workflow.
+
+## Preview
+
+| Menu | Reservations | Restaurant story |
+| --- | --- | --- |
+| ![Menu page](docs/assets/screenshots/screencapture-bella-73-vercel-app-menu-2026-03-22-11_31_02.png) | ![Reservation page](docs/assets/screenshots/screencapture-bella-73-vercel-app-reservation-2026-03-22-11_31_39.png) | ![Story page](docs/assets/screenshots/screencapture-bella-73-vercel-app-story-2026-03-22-11_31_17.png) |
+
+## Start locally
+
+**Prerequisites:** Node.js 20 LTS and npm.
 
 ```bash
-# Clone repository
-git clone https://github.com/Mostafa-SAID7/Bella.git
-cd Bella
-
-# Install dependencies
-npm install
-
-# Start development server
+git clone https://github.com/zakriahossam212-blip/Restaurant-Bella-F.git
+cd Restaurant-Bella-F
+npm ci
 npm start
-
-# Open http://localhost:4200
 ```
 
-**Live Demo**: https://bella-flax.vercel.app/
+Open <http://localhost:4200>.
 
-For detailed setup instructions, see [PROJECT_SETUP.md](docs/PROJECT_SETUP.md).
-
-## 📚 Documentation
-
-### Getting Started
-- **[PROJECT_SETUP.md](docs/PROJECT_SETUP.md)** - Complete development environment setup
-- **[STRUCTURE.md](docs/STRUCTURE.md)** - Project organization and file structure
-- **[TECHNOLOGIES.md](docs/TECHNOLOGIES.md)** - Tech stack and dependencies
-
-### Development
-- **[CONTRIBUTING.md](docs/CONTRIBUTING.md)** - Contribution guidelines and workflow
-- **[STYLES.md](docs/STYLES.md)** - Styling guide and CSS conventions
-- **[architecture.md](docs/architecture.md)** - Application architecture and design patterns
-
-### Features & Design
-- **[FEATURES.md](docs/FEATURES.md)** - Feature list and capabilities
-- **[USE_CASES.md](docs/USE_CASES.md)** - User personas and scenarios
-- **[ERD.md](docs/ERD.md)** - Entity relationship diagram and data model
-
-### Deployment & Operations
-- **[DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Deployment guide for all platforms
-- **[CI-CD-README.md](docs/CI-CD-README.md)** - CI/CD pipeline documentation
-- **[SECURITY.md](docs/SECURITY.md)** - Security policies and best practices
-
-### Community & Governance
-- **[CONDUCT.md](docs/CONDUCT.md)** - Code of conduct
-- **[CONTRIBUTORS.md](docs/CONTRIBUTORS.md)** - Contributors list
-- **[CHANGELOG.md](docs/CHANGELOG.md)** - Version history and releases
-
-**[📖 View All Documentation](docs/INDEX.md)** - Complete documentation index
-
-## 🏗️ Architecture
-
-The project follows a modular **Core/Shared/Features** pattern:
-
-- **`core/`** - Singleton services, models, and global state (NgRx)
-- **`shared/`** - Reusable components, pipes, and directives
-- **`features/`** - Business logic and feature components (Home, Menu, Booking, Chef, Story)
-
-See [architecture.md](docs/architecture.md) for detailed architecture documentation.
-
-## 🚀 Tech Stack
-
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| [Angular](https://angular.io/) | 19.2.0 | Frontend framework |
-| [NgRx](https://ngrx.io/) | 19.2.1 | State management |
-| [PrimeNG](https://primeng.org/) | 19.1.4 | UI components |
-| [Tailwind CSS](https://tailwindcss.com/) | 3.4.1 | Styling |
-| [Axios](https://axios-http.com/) | 1.13.6 | HTTP client |
-| [TypeScript](https://www.typescriptlang.org/) | 5.7.2 | Language |
-
-See [TECHNOLOGIES.md](docs/TECHNOLOGIES.md) for complete tech stack details.
-
-## 📁 Project Structure
-
-```
-resturent/
-├── .github/                    # GitHub configuration
-│   ├── workflows/              # CI/CD workflows
-│   ├── ISSUE_TEMPLATE/         # Issue templates
-│   └── CONTRIBUTING.md         # Contribution guidelines
-├── config/                     # Configuration files
-│   ├── deployment/             # Docker, Nginx, Netlify configs
-│   └── quality/                # Lighthouse and quality configs
-├── docs/                       # Comprehensive documentation
-│   ├── INDEX.md               # Documentation index
-│   ├── PROJECT_SETUP.md       # Setup guide
-│   ├── STRUCTURE.md           # Project structure
-│   ├── TECHNOLOGIES.md        # Tech stack
-│   ├── CONTRIBUTING.md        # Contribution guide
-│   ├── STYLES.md              # Styling guide
-│   ├── architecture.md        # Architecture
-│   ├── FEATURES.md            # Features
-│   ├── USE_CASES.md           # Use cases
-│   ├── ERD.md                 # Data model
-│   ├── DEPLOYMENT.md          # Deployment guide
-│   ├── CI-CD-README.md        # CI/CD documentation
-│   ├── SECURITY.md            # Security policy
-│   ├── CONDUCT.md             # Code of conduct
-│   ├── CONTRIBUTORS.md        # Contributors
-│   └── CHANGELOG.md           # Version history
-├── public/                     # Static assets
-│   ├── assets/                # Images and media
-│   └── data/                  # Static data
-├── scripts/                    # Utility scripts
-├── src/                        # Source code
-│   ├── app/
-│   │   ├── core/              # Core services and state
-│   │   ├── features/          # Feature modules
-│   │   ├── shared/            # Shared components
-│   │   └── app.routes.ts      # Route definitions
-│   ├── assets/                # Application assets
-│   └── styles/                # Global styles
-├── package.json               # Dependencies
-├── angular.json               # Angular configuration
-├── tsconfig.json              # TypeScript configuration
-└── README.md                  # This file
-```
-
-See [STRUCTURE.md](docs/STRUCTURE.md) for detailed project structure documentation.
-
-## 🎯 Features
-
-- **Restaurant Menu Display** - Dynamic menu with filtering and search
-- **Booking System** - Interactive calendar and reservation form
-- **Chef Profiles** - Chef information and signature dishes
-- **Restaurant Stories** - History and team information
-- **Responsive Design** - Mobile-first, fully responsive
-- **State Management** - NgRx for predictable state
-- **Performance Optimized** - Lazy loading, tree-shaking, code splitting
-- **Security** - CSP, security headers, input validation
-- **Multi-Platform Deployment** - GitHub Pages, Netlify, Vercel, AWS, Firebase, Docker
-
-See [FEATURES.md](docs/FEATURES.md) for complete feature list.
-
-## 🛠️ Available Scripts
+## Everyday commands
 
 ```bash
-# Development
-npm start                 # Start dev server (http://localhost:4200)
-npm run build            # Build for development
-npm run build:prod       # Build for production
-
-# Testing
-npm test                 # Run unit tests
-npm run test:ci          # Run tests in CI mode
-npm run e2e              # Run E2E tests
-
-# Code Quality
-npm run lint             # Run ESLint
-npm run lint:fix         # Fix linting issues
-npm run format           # Format code with Prettier
-npm run format:check     # Check formatting
-
-# Analysis
-npm run analyze          # Analyze bundle size
-
-# Docker
-npm run docker:build     # Build Docker image
-npm run docker:run       # Run Docker container
+npm start                 # Local development server
+npm run build:prod        # Optimized production build
+npm run type-check        # Application TypeScript check
+npm run lint              # ESLint
+npm run format:check      # Prettier validation
+npm run test:ci           # Headless unit tests with coverage
 ```
 
-See [PROJECT_SETUP.md](docs/PROJECT_SETUP.md) for detailed command documentation.
+## Project map
 
-## 🚀 Deployment
+```text
+src/app/
+├── core/       # API configuration, models, and NgRx state
+├── features/   # Route-level restaurant experiences
+├── layout/     # Shared navigation and footer
+└── shared/     # Reusable UI such as the premium calendar
 
-The application can be deployed to multiple platforms:
+public/
+├── assets/     # Static brand and chef imagery
+└── data/       # Mock restaurant data
 
-- **GitHub Pages** - Free static hosting
-- **Netlify** - Serverless with CI/CD
-- **Vercel** - Optimized for static sites
-- **AWS** - S3 + CloudFront
-- **Firebase** - Google Cloud integration
-- **Docker** - Containerized deployment
-
-See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for platform-specific deployment guides.
-
-## 🔄 CI/CD Pipeline
-
-Automated workflows handle:
-- Testing on every push
-- Code quality checks
-- Security scanning
-- Automated deployments
-- Dependency updates
-
-See [CI-CD-README.md](docs/CI-CD-README.md) for pipeline documentation.
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Read [CONDUCT.md](docs/CONDUCT.md) - Code of conduct
-2. Follow [CONTRIBUTING.md](docs/CONTRIBUTING.md) - Contribution guidelines
-3. Check [STYLES.md](docs/STYLES.md) - Code style guide
-4. Review [STRUCTURE.md](docs/STRUCTURE.md) - Project structure
-
-### Quick Contribution Steps
-
-```bash
-# 1. Fork and clone
-git clone https://github.com/Mostafa-SAID7/Bella.git
-
-# 2. Create feature branch
-git checkout -b feature/your-feature
-
-# 3. Make changes and test
-npm run lint
-npm run format
-npm test
-
-# 4. Commit with clear message
-git commit -m "feat: add your feature"
-
-# 5. Push and create PR
-git push origin feature/your-feature
+docs/          # Focused product, engineering, and operations guides
+config/        # Deployment and quality-tool configuration
 ```
 
-## 🔒 Security
+## Documentation
 
-For security concerns, see [SECURITY.md](docs/SECURITY.md).
+| Need | Read |
+| --- | --- |
+| Install, run, test, and troubleshoot | [Project setup](docs/PROJECT_SETUP.md) |
+| Understand application boundaries and state | [Architecture](docs/architecture.md) |
+| Work with the visual system | [Style guide](docs/STYLES.md) |
+| Review delivered product capabilities | [Features](docs/FEATURES.md) |
+| Deploy and operate the app | [Deployment](docs/DEPLOYMENT.md) |
+| Contribute safely | [Contributing](docs/CONTRIBUTING.md) · [Security](docs/SECURITY.md) · [Code of conduct](docs/CONDUCT.md) |
+| Browse all maintained docs | [Documentation index](docs/INDEX.md) |
 
-To report a vulnerability, email: m.ssaid356@gmail.com
+## Contributing
 
-**Live Demo**: https://bella-flax.vercel.app/
-
-**Portfolio**: https://m-said-portfolio.netlify.app/
-
-## 📋 Requirements
-
-- **Node.js**: 18.x or 20.x LTS
-- **npm**: 9.x or higher
-- **Git**: Latest version
-
-See [PROJECT_SETUP.md](docs/PROJECT_SETUP.md) for detailed requirements.
-
-## 📊 Project Status
-
-- **Version**: 1.0.0
-- **Status**: Active Development
-- **Last Updated**: March 31, 2026
-
-See [CHANGELOG.md](docs/CHANGELOG.md) for version history.
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/Mostafa-SAID7/Bella/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Mostafa-SAID7/Bella/discussions)
-- **Documentation**: [docs/INDEX.md](docs/INDEX.md)
-- **Portfolio**: https://m-said-portfolio.netlify.app/
-
-## 📄 License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
-## 👥 Contributors
-
-See [CONTRIBUTORS.md](docs/CONTRIBUTORS.md) for list of contributors.
-
----
-
-**[📖 View Complete Documentation](docs/INDEX.md)** | **[🐛 Report Issue](https://github.com/Mostafa-SAID7/Bella/issues)** | **[💬 Start Discussion](https://github.com/Mostafa-SAID7/Bella/discussions)** | **[👤 Portfolio](https://m-said-portfolio.netlify.app/)**
+Before opening a pull request, run the checks relevant to your change and update the focused documentation above when behavior changes. See the [contribution guide](docs/CONTRIBUTING.md) for branch, commit, testing, and review conventions.

@@ -4,12 +4,12 @@ import { AppData } from '../models/restaurant.model';
 import api from '../api.config';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
   private dataUrl = 'data/db.json';
 
-  constructor() { }
+  constructor() {}
 
   getData(): Observable<AppData> {
     return from(api.get<AppData>(this.dataUrl).then(res => res.data));

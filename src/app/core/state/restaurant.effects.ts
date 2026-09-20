@@ -15,7 +15,9 @@ export class RestaurantEffects {
       mergeMap(() =>
         this.apiService.getData().pipe(
           map(data => RestaurantActions.loadDataSuccess({ data })),
-          catchError(error => of(RestaurantActions.loadDataFailure({ error: error.message })))
+          catchError(error =>
+            of(RestaurantActions.loadDataFailure({ error: error.message }))
+          )
         )
       )
     )

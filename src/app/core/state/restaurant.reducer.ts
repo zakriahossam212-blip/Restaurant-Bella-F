@@ -16,7 +16,15 @@ export const initialState: RestaurantState = {
 
 export const restaurantReducer = createReducer(
   initialState,
-  on(RestaurantActions.loadData, (state) => ({ ...state, loading: true })),
-  on(RestaurantActions.loadDataSuccess, (state, { data }) => ({ ...state, loading: false, data })),
-  on(RestaurantActions.loadDataFailure, (state, { error }) => ({ ...state, loading: false, error }))
+  on(RestaurantActions.loadData, state => ({ ...state, loading: true })),
+  on(RestaurantActions.loadDataSuccess, (state, { data }) => ({
+    ...state,
+    loading: false,
+    data,
+  })),
+  on(RestaurantActions.loadDataFailure, (state, { error }) => ({
+    ...state,
+    loading: false,
+    error,
+  }))
 );

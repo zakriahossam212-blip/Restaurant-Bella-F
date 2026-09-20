@@ -65,7 +65,7 @@ jobs:
         run: npm ci
 
       - name: Run TypeScript compiler
-        run: npx tsc --noEmit
+        run: npm run type-check
 
   build:
     runs-on: ubuntu-latest
@@ -88,7 +88,7 @@ jobs:
         run: npm run build:prod
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
           path: dist/

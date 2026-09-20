@@ -7,5 +7,5 @@ export const RestaurantActions = createActionGroup({
     'Load Data': emptyProps(),
     'Load Data Success': props<{ data: AppData }>(),
     'Load Data Failure': props<{ error: string }>(),
-  }
+  },
 });

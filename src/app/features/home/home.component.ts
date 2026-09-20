@@ -25,7 +25,7 @@ import { NavbarComponent } from '../../layout/navbar/navbar.component';
     TestimonialsComponent,
     BookingComponent,
     MapComponent,
-    FooterComponent
+    FooterComponent,
   ],
   template: `
     <main class="bg-black text-white selection:bg-accent selection:text-white">
@@ -41,8 +41,12 @@ import { NavbarComponent } from '../../layout/navbar/navbar.component';
       <app-footer></app-footer>
     </main>
   `,
-  styles: [`
-    :host { display: block; }
-  `]
+  styles: [
+    `
+      :host {
+        display: block;
+      }
+    `,
+  ],
 })
 export class HomeComponent {}

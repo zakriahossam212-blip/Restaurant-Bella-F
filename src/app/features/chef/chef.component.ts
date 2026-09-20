@@ -122,17 +122,17 @@ export class ChefPage {
     {
       name: 'Chef Mahmoud',
       title: 'Executive Chef',
-      image: 'assets/images/chef_1.svg',
+      image: 'assets/images/chef_1.svg'
     },
     {
       name: 'Ahmed Mohamed',
       title: 'Sous Chef',
-      image: 'assets/images/chef_2.svg',
+      image: 'assets/images/chef_2.svg'
     },
     {
       name: 'Sara Hayat',
       title: 'Pastry Master',
-      image: 'assets/images/chef_3.svg',
-    },
+      image: 'assets/images/chef_3.svg'
+    }
   ];
 }

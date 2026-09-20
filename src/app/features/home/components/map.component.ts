@@ -70,35 +70,14 @@ import { LucideAngularModule, MapPin } from 'lucide-angular';
             </p>
 
             <div class="flex gap-3 md:gap-4 mb-12 md:mb-16">
-              <div
-                class="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110"
-              >
-                <img
-                  src="assets/images/social_1.svg"
-                  alt="Bella dining table detail"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+                <img src="assets/images/social_1.svg" alt="Bella dining table detail" class="w-full h-full object-cover" loading="lazy">
               </div>
-              <div
-                class="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110"
-              >
-                <img
-                  src="assets/images/social_2.svg"
-                  alt="Bella kitchen detail"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+                <img src="assets/images/social_2.svg" alt="Bella kitchen detail" class="w-full h-full object-cover" loading="lazy">
               </div>
-              <div
-                class="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110"
-              >
-                <img
-                  src="assets/images/social_3.svg"
-                  alt="Bella wine service detail"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
+              <div class="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border border-white/10 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110">
+                <img src="assets/images/social_3.svg" alt="Bella wine service detail" class="w-full h-full object-cover" loading="lazy">
               </div>
             </div>
 

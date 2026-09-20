@@ -10,4 +10,41 @@
   <body>
     <app-root></app-root>
   </body>
+<head>
+  <meta charset="utf-8">
+  <title>Bella Restaurant</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    /* Keep the first paint aligned with the dark application shell while Angular and its CSS load. */
+    html {
+      background: #000;
+      color-scheme: dark;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: #000;
+      color: #fff;
+      font-family: Inter, Arial, sans-serif;
+    }
+
+    app-root {
+      display: block;
+      min-height: 100vh;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+</body>
 </html>
